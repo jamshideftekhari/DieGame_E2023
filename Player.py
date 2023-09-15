@@ -43,5 +43,20 @@ if __name__ == "__main__":
 
     print(scoreList)
 
+    # score list of player objects
+    from Die import Die
+    playerList = []
+    playerList.append(Player("John"))
+    playerList.append(Player("Poul"))
+    playerList.append(Player("Kim"))
+
+    print(playerList)
+    print(playerList[0].getName())
+    print(json.dumps(playerList[0].__dict__))
+    print(playerList[0].__dict__)
+    print("****")
+    print(json.dumps([ob.__dict__ for ob in playerList]))
+
+
     
    
